@@ -1,0 +1,40 @@
+.video-play-page {
+    iframe {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .video-opening-container {
+        min-width: 100%;
+        min-height: 100%;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        video {
+            width: 50%;
+            height: 100%;
+        }
+    }
+    div {
+        position: absolute;
+        top: 27px;
+        left: 30px;
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            font-size: 38px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

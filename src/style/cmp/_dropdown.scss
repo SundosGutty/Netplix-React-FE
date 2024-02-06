@@ -1,0 +1,98 @@
+.dropdown {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+
+    &:hover > .dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        cursor: pointer;
+    }
+    img {
+        display: block;
+        position: relative;
+        z-index: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(64, 64, 64, 0.5);
+        width: 100px;
+        top: 39px;
+        right: -17px;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+        button {
+            border: none;
+            width: 100%;
+            text-align: left;
+            &:hover {
+                background: rgba(0, 0, 0, 0.31);
+            }
+        }
+        a {
+            &:hover {
+                background: rgba(0, 0, 0, 0.31);
+            }
+        }
+        button,
+        a {
+            display: block;
+            color: white;
+            background-color: inherit;
+            padding: 5px;
+            text-decoration: none;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+    &:hover .dropdown-content {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+        display: block;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .dropdown {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        .dropdown-content {
+            top: 60px;
+            img {
+                width: 35px;
+                height: 35px;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .dropdown {
+        &:hover .dropdown-content {
+            width: 80px;
+        }
+    }
+    .dropdown-content {
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

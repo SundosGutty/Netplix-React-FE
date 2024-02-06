@@ -1,0 +1,23 @@
+footer {
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.75);
+    min-width: 190px;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    color: #757575;
+    position: relative;
+    gap: 27px;
+}
+
+@media (max-width: 940px) {
+    footer {
+        padding-top: 43px;
+        section{
+            div:last-child{
+                display: none;
+            }
+
+        }
+    }
+}

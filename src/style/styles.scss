@@ -1,0 +1,30 @@
+// SETUP
+@import './setup/typography';
+@import './setup/flex';
+// @import './setup/variables';
+// @import './setup/mixins';
+
+// BASICS
+@import './basics/helpers';
+@import './basics/base';
+// @import './basics/layout';
+// @import './basics/modals';
+
+// PAGES
+@import './pages/netplix-home';
+@import './pages/form';
+@import './pages/user-profile';
+@import './pages/user-list';
+@import './pages/video-play-page';
+
+// COMPONENTS
+@import './cmp/app-header';
+@import './cmp/media-preview';
+@import './cmp/app-footer';
+@import './cmp/form-footer';
+@import './cmp/details-modal';
+@import './cmp/img-choice-modal';
+@import './cmp/dropdown';
+@import './cmp/filter-media';
+
+

@@ -1,0 +1,30 @@
+footer {
+    padding: 70px 0px 70px 180px;
+    min-width: 190px;
+    // background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    padding-bottom: 20px;
+    line-height: 2rem;
+    font-size: 0.8em;
+    color: #757575;
+    position: relative;
+    height: fit-content;
+    gap: 20px;
+    .links-container {
+        width: 80%;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    footer {
+        padding: 10px 0px 10px 10px;
+        .links-container {
+            :last-child{
+                display: none;
+            }
+        }
+    }
+}

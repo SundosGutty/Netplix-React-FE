@@ -1,0 +1,47 @@
+.filter-media {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+
+    img {
+        filter: brightness(0) invert(1);
+        width: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: 700px) {
+        display: none;
+    }
+
+    input {
+        background-color: rgba(64, 64, 64, 0.5);
+        color: white;
+        border: 1px solid white;
+        transition: width 0.5s;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 4px;
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+@media (min-width: 1500px)  {
+    .filter-media {
+        margin-right: 25px;
+        img {
+            width: 38px;
+        }
+        input {
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+}
