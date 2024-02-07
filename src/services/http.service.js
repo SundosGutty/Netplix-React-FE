@@ -1,8 +1,7 @@
 import Axios from 'axios'
 
-const BASE_URL = process.env.NODE_ENV === 'production'
-    ? 'https://netplix-be.onrender.com/'
-    : '//localhost:3002/api/'
+const BASE_URL = 'https://netplix-be.onrender.com/'
+
    
 
 var axios = Axios.create({
