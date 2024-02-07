@@ -37,7 +37,8 @@ export const VideoPlay = (props) => {
     return (
         <section className='video-play-page'>
             {isGifOn ? <div className="video-opening-container "><video autoPlay src={require('../assets/videos/netflix-opening.mp4')}></video></div> :
-                <iframe muted allow="autoplay; encrypted-media" width="100%" height="100%" src={utilService.getUrl(item.trailer)} controls frameBorder="0" allowFullScreen></iframe>}
+            <iframe title="Trailer for Movie XYZ" muted allow="autoplay; encrypted-media" width="100%" height="100%" src={utilService.getUrl(item.trailer)} controls frameBorder="0" allowFullScreen></iframe>
+                }
             <div><i onClick={back} className="fa fa-arrow-circle-left"></i></div>
         </section>
     )
