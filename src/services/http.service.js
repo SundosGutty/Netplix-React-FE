@@ -1,6 +1,6 @@
 import Axios from 'axios'
 
-const BASE_URL = 'https://main--curious-caramel-25f854.netlify.app/api/'
+const BASE_URL = 'https://netplix-be.onrender.com/api/'
 
    
 
