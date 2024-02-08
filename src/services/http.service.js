@@ -2,7 +2,7 @@ import Axios from 'axios'
 
 const BASE_URL = 'https://netplix-be.onrender.com/api/'
 
-   
+// const BASE_URL = 'http://localhost:3001/api/'
 
 var axios = Axios.create({
     withCredentials: true

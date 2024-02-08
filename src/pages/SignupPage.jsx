@@ -15,6 +15,8 @@ export const Signup = () => {
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
     const [error] = useState('');
+    const emailPattern = new RegExp("[a-z0-9._%+-]+@[a-z0-9]+\\.[a-z]{2,4}$");
+
 
     useEffect(() => {
         if (history.location.state) setEmail(history.location.state.detail);
@@ -60,11 +62,11 @@ export const Signup = () => {
                             onChange={({ target }) => setFirstName(target.value)}
                             required
                         />
-            <input
+<input
     placeholder="Email address"
     value={email ? email : emailAddress}
     onChange={({ target }) => setEmailAddress(target.value.toLocaleLowerCase())}
-    pattern="[a-z0-9._%+-]+@[a-z0-9]+\.[a-z]{2,4}$"
+    pattern={emailPattern}
     required
 />
                         <input
@@ -79,17 +81,6 @@ export const Signup = () => {
                             Sign Up
                         </button>
                     </form>
-                    {/* <GoogleLogin
-                        clientId='361317884251-ufajak1hhu42t8mpobrucofa84afg4rs.apps.googleusercontent.com'
-                        onSuccess={handleSignupWithGoogle}
-                        onFailure={handleFailure}
-                        render={renderProps => (
-                            <button className='btn-google-login' onClick={renderProps.onClick} disabled={renderProps.disabled}><i className="fa fa-google" aria-hidden="true"></i>
-                                Signup with Google</button>
-                        )}
-                        buttonText="Login"
-                        cookiePolicy={'single_host_origin'}>
-                    </GoogleLogin> */}
                     <div>
                         <span>Already a user? <Link to="/signin">Sign in now.</Link></span>
                         <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
