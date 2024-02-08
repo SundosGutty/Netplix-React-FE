@@ -20,7 +20,7 @@ export const Signup = () => {
 
     useEffect(() => {
         if (history.location.state) setEmail(history.location.state.detail);
-        else setEmail(''); // Set it to an empty string if undefined
+        else setEmail(''); 
     }, [history]);
 
     const handleSignin = (event) => {
@@ -36,13 +36,6 @@ export const Signup = () => {
         }
     }
 
-    const handleSignupWithGoogle = async (res) => {
-        const email = res.profileObj.email
-        const username = res.profileObj.givenName
-        const userPassword = res.profileObj.email
-        dispatch(signup({ firstName: username, emailAddress: email, password: userPassword }))
-        history.push('/user-profile')
-    }
 
     const handleFailure = (result) => {
         console.log(result)

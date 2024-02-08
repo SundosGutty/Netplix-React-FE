@@ -70,19 +70,8 @@ export const Signin = () => {
                         Sign In
                     </button>
                 </form>
-                {/* <GoogleLogin
-                    clientId='361317884251-ufajak1hhu42t8mpobrucofa84afg4rs.apps.googleusercontent.com'
-                    onSuccess={handleLoginWithGoogle}
-                    onFailure={handleFailure}
-                    render={renderProps => (
-                        <button className='btn-google-login' onClick={renderProps.onClick} disabled={renderProps.disabled}><i className="fa fa-google" aria-hidden="true"></i>
-                            Login with Google</button>
-                    )}
-                    buttonText="Login"
-                    cookiePolicy={'single_host_origin'}>
-                </GoogleLogin> */}
                 <div>
-                    <span>New to Netflix? <Link to="/signup">Sign up now.</Link></span>
+                    <span>New to Netplix? <Link to="/signup">Sign up now.</Link></span>
                     <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
                 </div>
             </section>

@@ -42,16 +42,7 @@ export function NetplixHome() {
                 <div className="flex column">
                     <p>Unlimited films, Tv programmes and more.</p>
                     <h5>Watch anywhere. Cancel at any time.</h5>
-                    <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
-                    <form onSubmit={checkProfile} className="flex form  align-center">
-                        <input
-                            placeholder="Email address"
-                            value={emailAddress}
-                            onChange={({ target }) => setEmailAddress(target.value)}
-                            required
-                        ></input>
-                        <button >Get started<i className="fa fa-angle-right"></i></button>
-                    </form>
+                    <h6>Ready to watch? Click above to create or restart your membership.</h6>
                 </div>
             </header>
             <main className="flex column">
@@ -99,9 +90,9 @@ export function NetplixHome() {
                                         />
                                     )}
                                 </span>
-                                <div className="body" className={item.body.isShown ? 'open' : 'closed'}>
-                                    <span>{item.body.txt}</span>
-                                </div>
+                                <div className={`body ${item.body.isShown ? 'open' : 'closed'}`}>
+                                      <span>{item.body.txt}</span>
+                                  </div>
                             </div>
                         ))}
                     </div>

@@ -9,7 +9,6 @@ import selectionFilter from '../services/selection-filter';
 export const NetplixApp = () => {
     const { media } = useSelector((state) => state.mediaModule)
     const [filteredMedia, setFilteredMedia] = useState()
-    // const [filterMode, setFilterMode] = useState(false)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -22,7 +21,6 @@ export const NetplixApp = () => {
 
     const onChangeFilter = useCallback((filterBy) => {
         dispatch(setFilterBy(filterBy))
-        // setFilterMode(filterBy)
         dispatch(loadMedia())
     }, [])
 
