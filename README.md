@@ -1,3 +1,1 @@
-# Netplix-React-FE
-# Netplix-React-FE
-# Netplix-React-FE
+It's a smaller version of the great Netflix, please note that the application is uploaded with Netlify, and can get stuck sometimes, just retry again, or download my code and run it. Just do not forget to change the URL_BASE in the frontEnd. 
